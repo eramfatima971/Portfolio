@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Premium Portfolio | Powder Blue Theme</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="portfolio-overlay"></div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                <!-- CUSTOMIZE: Your Initial/Name -->
+                <span class="logo-text">EF</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link active"><i data-lucide="user"></i> About</a></li>
+                    <li><a href="#education" class="nav-link"><i data-lucide="graduation-cap"></i> Education</a></li>
+                    <li><a href="#skills" class="nav-link"><i data-lucide="cpu"></i> Skills</a></li>
+                    <li><a href="#hobbies" class="nav-link"><i data-lucide="heart"></i> Hobbies</a></li>
+                    <li><a href="#contact" class="nav-link"><i data-lucide="mail"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="theme-palette-selector" id="theme-palette-selector">
+                    <button class="palette-dot active" data-theme="blue" style="background-color: #B0E0E6;" title="Powder Blue" aria-label="Powder Blue Theme"></button>
+                    <button class="palette-dot" data-theme="sage" style="background-color: #9EC59E;" title="Sage Green" aria-label="Sage Green Theme"></button>
+                    <button class="palette-dot" data-theme="yellow" style="background-color: #F2DE79;" title="Soft Yellow" aria-label="Soft Yellow Theme"></button>
+                    <button class="palette-dot" data-theme="pink" style="background-color: #F0ADC5;" title="Powder Pink" aria-label="Powder Pink Theme"></button>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+                    <i data-lucide="menu" class="open-icon"></i>
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+        <!-- HERO SECTION (Name & About Me) -->
+        <section id="about" class="section hero-section">
+            <div class="section-card hero-card">
+                <div class="hero-layout">
+                    <div class="hero-text">
+                        <span class="badge">Welcome to my world</span>
+                        <!-- CUSTOMIZE: Your Full Name -->
+                        <h1 class="hero-name">Hello, I'm <span class="highlight" style="white-space: nowrap;">Eram Fatima</span></h1>
+                        <!-- CUSTOMIZE: Your Subtitle -->
+                        <h2 class="hero-title">MCA Student</h2>
+                        <!-- CUSTOMIZE: Your Short Bio -->
+                        <p class="hero-description">
+                            Hi, I'm Eram, a curious learner and aspiring tech professional passionate about programming, data science, and problem-solving. I enjoy working with technologies like Java, Python, HTML, and NumPy etc. Beyond technology, I'm a thoughtful and creative individual who loves continuous learning, exploring new ideas, and turning challenges into opportunities for growth.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Let's Connect <i data-lucide="arrow-right"></i></a>
+                            <a href="#skills" class="btn btn-secondary">Explore Skills</a>
+                        </div>
+                    </div>
+                    <!-- CUSTOMIZE: Hero Portrait Image -->
+                    <div class="hero-profile-container">
+                        <div class="profile-frame">
+                            <img src="assets/profile.png" alt="Eram Fatima Profile Picture" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <div>
+                        <span class="card-subtitle">My Academic Path</span>
+                        <h2 class="card-title">Education</h2>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <!-- CUSTOMIZE: MCA -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-duration">2025 — 2027 (Current)</span>
+                            <h3 class="timeline-title">Master of Computer Applications (MCA)</h3>
+                            <span class="timeline-org">Integral University, Lucknow</span>
+                            <p class="timeline-desc">Focusing on advanced software engineering, data science paradigms, database models, and modern algorithms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <!-- CUSTOMIZE: BCA -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-duration">2022 — 2025</span>
+                            <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+                            <span class="timeline-org">Integral University, Lucknow</span>
+                            <p class="timeline-desc">Graduated with a strong fundamental understanding of data structures, database systems, core software paradigms, and programming languages (Java, Python, HTML).</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <!-- CUSTOMIZE: Intermediate -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-duration">Graduated 2021</span>
+                            <h3 class="timeline-title">Intermediate / Higher Secondary (12th Grade)</h3>
+                            <span class="timeline-org">Siddhartha Public School, Kanjhawla, Delhi</span>
+                            <p class="timeline-desc">Completed higher secondary education focusing on Physics, Chemistry, and Biology (PCB), establishing a strong scientific and analytical mindset before pivoting into computer applications.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <!-- CUSTOMIZE: Matriculation -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-duration">Graduated 2019</span>
+                            <h3 class="timeline-title">Secondary School Certificate (10th Grade)</h3>
+                            <span class="timeline-org">Aman Academy, Loam, Bihar</span>
+                            <p class="timeline-desc">Graduated secondary school, establishing core foundational skills and developing a strong curiosity for mathematics and technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <div>
+                        <span class="card-subtitle">What I'm Good At</span>
+                        <h2 class="card-title">Skills I Know</h2>
+                    </div>
+                </div>
+                <p class="section-intro-text">
+                    Over time, I've developed a diverse set of skills ranging from technical capabilities to creative and soft skills. Here is a snapshot of my expertise:
+                </p>
+
+                <div class="skills-categories">
+                    <!-- Technical Skills -->
+                    <!-- CUSTOMIZE: Tech Skills -->
+                    <div class="skills-category-box">
+                        <h3 class="category-title"><i data-lucide="code-2"></i> Technical & Creative</h3>
+                        <div class="skills-grid">
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">C Programming</span>
+                                <div class="skill-level-bar" style="width: 85%;"></div>
+                            </div>
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">C++ Programming</span>
+                                <div class="skill-level-bar" style="width: 80%;"></div>
+                            </div>
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">Java Programming</span>
+                                <div class="skill-level-bar" style="width: 90%;"></div>
+                            </div>
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">Python Programming</span>
+                                <div class="skill-level-bar" style="width: 85%;"></div>
+                            </div>
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">HTML5 / CSS3</span>
+                                <div class="skill-level-bar" style="width: 95%;"></div>
+                            </div>
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">NumPy & Data Science</span>
+                                <div class="skill-level-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft & Transferable Skills -->
+                    <!-- CUSTOMIZE: Soft Skills -->
+                    <div class="skills-category-box">
+                        <h3 class="category-title"><i data-lucide="user-check"></i> Personal & Professional</h3>
+                        <div class="skills-grid">
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">Problem Solving</span>
+                                <div class="skill-level-bar" style="width: 90%;"></div>
+                            </div>
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">Effective Communication</span>
+                                <div class="skill-level-bar" style="width: 85%;"></div>
+                            </div>
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">Team Collaboration</span>
+                                <div class="skill-level-bar" style="width: 95%;"></div>
+                            </div>
+                            <div class="skill-badge-wrapper">
+                                <span class="skill-badge">Time Management</span>
+                                <div class="skill-level-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOBBIES SECTION -->
+        <section id="hobbies" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <div>
+                        <span class="card-subtitle">My Creative Outlets</span>
+                        <h2 class="card-title">Hobbies & Interests</h2>
+                    </div>
+                </div>
+                <p class="section-intro-text">
+                    Beyond my professional and academic focus, I engage in a few activities that recharge my creativity and keep me inspired.
+                </p>
+
+                <!-- CUSTOMIZE: Your Hobbies -->
+                <div class="hobbies-grid">
+                    <!-- Hobby 1 (Painting) -->
+                    <div class="hobby-card">
+                        <div class="hobby-icon-bg">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <h3 class="hobby-name">Painting</h3>
+                        <p class="hobby-desc">Playing with watercolors, acrylics, and canvas to capture life's vivid scenes and colors.</p>
+                    </div>
+
+                    <!-- Hobby 2 (Listening Songs) -->
+                    <div class="hobby-card">
+                        <div class="hobby-icon-bg">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <h3 class="hobby-name">Listening to Music</h3>
+                        <p class="hobby-desc">Unwinding with diverse musical genres that refresh my mind and spark creative ideas.</p>
+                    </div>
+
+                    <!-- Hobby 3 (Travelling) -->
+                    <div class="hobby-card">
+                        <div class="hobby-icon-bg">
+                            <i data-lucide="plane"></i>
+                        </div>
+                        <h3 class="hobby-name">Travelling</h3>
+                        <p class="hobby-desc">Exploring new landscapes, experiencing diverse cultures, and gaining a broader perspective on life.</p>
+                    </div>
+
+                    <!-- Hobby 4 (Writing Journal) -->
+                    <div class="hobby-card">
+                        <div class="hobby-icon-bg">
+                            <i data-lucide="notebook"></i>
+                        </div>
+                        <h3 class="hobby-name">Writing Journal</h3>
+                        <p class="hobby-desc">Reflecting on daily experiences, cataloging thoughts, and cultivating mindfulness and gratitude.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <div>
+                        <span class="card-subtitle">Let's Keep In Touch</span>
+                        <h2 class="card-title">Contact Me</h2>
+                    </div>
+                </div>
+                
+                <div class="contact-layout">
+                    <!-- CUSTOMIZE: Your Contact Info Details -->
+                    <div class="contact-info">
+                        <p class="contact-text">
+                            Whether you want to collaborate on a exciting project, talk about technology and design, or just say hello, my inbox is always open!
+                        </p>
+                        
+                        <div class="contact-details-list">
+                            <a href="mailto:eramfatima971@gmail.com" class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <span class="detail-label">Email Me</span>
+                                    <span class="detail-value">eramfatima971@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Lucknow, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! This is a demo template.');">
+                            <div class="form-group">
+                                <label for="form-name">Full Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" placeholder="johndoe@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Your Message</label>
+                                <textarea id="form-message" rows="4" placeholder="Hi Eram Fatima, let's work together!" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message <i data-lucide="send"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Eram Fatima. Created with a beautiful Powder Blue Theme.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
